@@ -1,0 +1,581 @@
+/* ELEMENTOS GLOBALES */
+
+:root {
+    --green-main: #444b3c;
+    --logo: #d9d3c7;
+    --contrast: #f3d279;
+
+    --header-height: 10vh;
+
+    /* Fuentes */
+
+    --JosefinSans:'Josefin Sans', sans-serif;
+    --OpenSans: "Open Sans";
+    --RobotoFlex: 'Roboto Flex', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--logo);
+}
+
+.main-content {
+    width: 100vw;
+    background-color: var(--logo);
+
+    min-height: 100vh;
+    height: auto;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+
+    position: fixed;
+    z-index: 9;
+
+    width: 100vw;
+    height: var(--header-height);
+
+    background-color: var(--green-main);
+    box-shadow: #000000 0px 0px 20px;
+
+    transition: all .5s;
+
+
+}
+
+.logo_container {
+    display: flex;
+
+    width: 25%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo_header {
+    height: 100%;
+}
+
+.logo_header img {
+    height: 100%;
+}
+
+.nav_bar {
+    display: flex;
+
+    width: 75%;
+    height: 100%;
+
+}
+
+.nav_container {
+    display: flex;
+    flex: 1;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+
+}
+
+.nav_container a {
+    font-size: 1.5vh;
+    font-weight: bold;
+
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--logo);
+
+    transition: all 0.3s ease;
+
+}
+
+.nav_container a:hover {
+    color: var(--contrast);
+    
+}
+
+.nav_active {
+    color: var(--contrast) !important;
+}
+
+.nav_bar_responsive, nav {
+    display: none;
+}
+
+/* Estilos de Header RESPONSIVE */
+
+@media only screen and (max-width: 900px) {
+
+    .nav_bar {
+        display: none;
+    }
+
+    .logo_container {
+        width: 100%;
+    }
+
+    .nav_bar_responsive {
+        display: flex;
+
+        width: 20%;
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+
+        margin-left: 80%;
+
+        color: var(--logo);
+
+    }
+
+    .menu_bars {
+        width: 50%;
+    }
+
+
+    /* Estilos para barra de navegacion lateral */
+
+    nav {
+        display: block;
+        position: fixed;
+
+        z-index: 10;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--green-main);
+        
+        color:var(--logo);
+
+        left: 100vw;
+
+        transition: .5s all;
+
+    }
+
+    .close_bar_responsive_container {
+        display: flex;
+
+        justify-content: right;
+
+        width: 100%;
+        height: var(--header-height);
+
+    }
+
+    .close_nav_bar {
+        display: flex;
+
+        width: 20%;
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    
+
+    .menu_close {
+       width: 60%;
+    }
+
+    .nav_bar_container {
+        display: block;
+
+        width: 100vw;
+        height: calc(100vh - var(--header-height));
+
+    }
+
+    .nav_container_responsive {
+        display: flex;
+
+        width: 100%;
+        height: 15%;
+
+        justify-content: center;
+        align-items: center;
+
+        font-family: "Open Sans";
+        
+
+    }
+
+    .nav_element {
+        text-decoration: none;
+        text-align: center;
+        color: var(--logo);
+
+        font-size: 125%;
+
+    }
+
+
+    }
+
+/* Redimesiona el header dependiendo de height */
+
+    @media only screen and (max-height: 700px) {
+
+    :root {
+        --header-height: 70px;
+
+    }
+}
+
+/* Barra de navegacion en caso de movil en formato horizontal */
+
+@media only screen and (max-height: 520px) {
+
+    .close_bar_responsive_container {
+        position:absolute;
+
+        height: var(--header-height);
+        width: 20vw;
+
+        margin-left: 80vw;
+
+
+    }
+
+    .close_nav_bar {
+        
+        width: 100%;
+
+    }
+    
+    .nav_bar_container {
+        height: 100vh;
+    }
+    
+    .nav_container_responsive {
+        height: 16%;
+    }
+
+}
+
+/* Estilos para Footer */
+
+footer {
+    display: flex;
+    overflow: hidden;
+
+    width: 100vw;
+
+    min-height: 200px;
+    height: 20vh;
+
+    background-color: var(--logo);
+    color: var(--green-main);
+
+    box-shadow: #000000 0px 0px 20px;
+
+    
+}
+
+.footer_container {
+    display: block;
+    flex: 1;
+
+    height: 100%;
+
+}
+
+.logo_footer {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo_footer img {
+    height: 70%;
+
+}
+
+
+.footer_socialMedia {
+    display: flex;
+
+    width: 100%;
+    height: 50%;
+
+    padding-left: 20%;
+
+    
+}
+
+.socialMediaUp {
+
+    align-items:end;
+
+    padding-bottom: 10px;
+
+}
+
+.socialMediaBottom {
+
+    align-items:start;
+
+    padding-top: 10px;
+}
+
+
+
+.footer_socialMedia a {
+    display: flex;
+
+    height: 30%;
+
+    text-decoration: none;
+
+    color: var(--green-main);
+
+}
+
+.footer_icon {
+    height: 100%;
+}
+
+.footer_socialMedia a div {
+    display: flex;
+
+    height: 100%;
+
+    align-items: center;
+
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 100%;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+
+.footer_KO729 {
+    display: flex;
+
+    justify-content: center;
+    align-items: end;
+
+    width: 100%;
+    height: 60%;
+
+    padding-top: 5vh;
+
+    padding-bottom: 10px;
+}
+
+.footer_KO729 img {
+    height: 120%;
+}
+
+.footer_AE {
+    display: flex;
+
+    width: 100%;
+    height: 40%;
+
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.5vh;
+    font-weight: 900;
+
+    font-family: var(--JosefinSans);
+
+}
+
+/* Estilos FOOTER RESPONSIVE */
+@media only screen and (max-width: 900px) {
+    
+    footer {
+        display: block;
+
+        height: 80vh;
+    }
+
+    .footer_logo_responsive {
+        height: 20%;
+
+    }
+    
+
+    .logo_footer img {
+        height: 100%;
+
+    }
+
+    .footer_socialMedia_responsive {
+        height: 20%;
+
+    }
+
+    .socialMediaUp, .socialMediaBottom {
+
+        align-items:center;
+    
+        padding-top: 0px;
+        padding-bottom: 0px;
+    
+    }
+
+    .footer_socialMedia {
+        padding-left: 10px;
+    }
+
+        
+    .footer_socialMedia a {
+
+        height: 80%;
+
+    }
+
+    .footer_logo2_responsive {
+        height: 40%;
+
+    }
+    
+    .footer_KO729 {
+        height: 50%;
+    }
+
+    .footer_AE {
+        height: 50%;
+    }
+
+}
+
+
+
+/* Estilos del banner */
+
+.banner_container {
+
+    width: 100vw;
+    height: 70vh;
+
+    background-color: var(--green-main);
+
+    position: relative;
+
+
+}
+
+.banner_element {
+    width: 100vw;
+    height: 70vh; 
+
+    filter: brightness(0.5); 
+
+    object-fit:cover;
+
+    position: absolute;
+
+    transition: 1s all;
+
+}
+
+
+/* Estilos de TITULO */
+
+
+.tittle_container {
+    display: flex;
+
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+
+
+
+}
+
+.tittle_elementsContainer {
+
+    
+    margin-top: 15vh;
+
+    width: 100%;
+    height: 70%;
+
+
+
+}
+
+.tittle_element {
+    display: flex;
+
+    width: 100%;
+    height: 67%;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.tittle_img {
+
+
+    height: 80%;
+
+}
+
+.tittle {
+
+    display: flex;
+
+    width: 100%;
+    height: 33% ;
+
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+
+    font-family: var(--JosefinSans);
+    font-size: 2.5vh;
+    font-weight: 100;
+
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+   
+
+    .tittle_element {
+
+        height: 40%
+    };
+
+    .tittle {
+        height: 60%;
+        
+    }
+
+}

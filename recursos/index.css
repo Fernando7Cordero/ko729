@@ -1,0 +1,210 @@
+
+.tittle_container {
+    display: flex;
+
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+
+
+
+}
+
+.tittle_elementsContainer {
+
+    
+    margin-top: 0vh;
+
+    width: 100%;
+    height: 70%;
+
+
+
+}
+
+/* Estilos de Desarrollos + Construccion */
+
+.desarrollosConstruccion_Container {
+    display: block;
+
+    width: 100vw;
+
+    background-color: var(--green-main);
+
+    color: var(--logo);
+}
+
+.desarrollosConstruccion {
+    display: flex;
+
+    width: 100vw;
+    min-height: 60vh;
+
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+
+    justify-content: center;
+   
+}
+
+
+.deCo_element {
+    display: flex;
+
+    width: 80%;
+
+    /* 
+    centrar
+    align-items: center; */
+
+    align-items: start;
+
+
+
+}
+
+.decoText {
+    width: 60%;
+    height: fit-content;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.deCo_titulo {
+    display: flex;
+
+    justify-content: center;
+
+    font-family: var(--JosefinSans);
+    font-size: 4vh;
+    font-weight: 900;
+
+    text-align: center;
+}
+
+.deCo_description {
+
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+
+
+    font-family: sans-serif;
+    font-size: 2vh;
+
+
+    text-align: justify;
+} 
+
+.deCo_button_container {
+    display: flex;
+    
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.deCo_img {
+
+    width: 40%;
+    height: 100%;
+
+
+
+
+}
+
+.img1 {
+    background-image: url(../img/index/desarrollos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url(../img/index/construccion.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.deCo_button {
+    
+    font-size: 2vh;
+    padding: 1vh;
+
+    font-family:var(--JosefinSans);
+    font-weight: 100;
+
+    text-decoration: none;
+    color: var(--logo);
+
+    transition: .5s all;
+
+    border: solid 1px;
+
+}
+
+.deCo_button_container :hover {
+
+    background-color: var(--logo);
+    color: var(--green-main);
+}
+
+@media only screen and (max-width: 950px) {
+    
+
+    .deCo_element {
+        display: block;
+
+        width: 90%;
+        height: auto;
+        
+    }
+
+    .decoText {
+        width: 100%;
+        
+    }
+
+    
+    .deCo_img {
+
+        margin-top: 5vh;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        width: 80%;
+        height: 50vh;
+
+
+
+
+    }
+
+
+    .deCo_description {
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .deCo_button_container {
+        margin-top: 7%;
+    }
+
+}
+
+
+
+
+/* Estilos del COLLAGE */
+
+.collageContainer {
+    height: 0vh;
+}
