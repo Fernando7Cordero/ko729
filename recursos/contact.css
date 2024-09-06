@@ -1,0 +1,133 @@
+body {
+    min-height:0;
+}
+
+.contactContainer {
+
+    display: flex;
+
+    width: 100vw;
+    min-height: 30vh;
+
+    padding-bottom: 25vh;
+    padding-top: 10vh;
+
+    background-color: var(--green-main);
+    color: var(--logo);
+
+}
+
+.contactBox {
+    display: flex;
+    
+    width: 50vw;
+
+
+
+}
+
+.text {
+    justify-content: end;
+    align-items: center;
+
+    font-family: var(--JosefinSans);
+
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.text a {
+    display: flex;
+
+    align-items: center;
+    text-decoration: none;
+
+
+    color: var(--logo);
+
+    font-weight: 900;
+
+}
+
+.text a img {
+
+    height: 5vh;
+
+    padding-right: .5vw;
+}
+
+.speechContainer {
+    font-weight: 900;
+
+    font-size: 2.5vh;
+
+    padding-bottom: 3vh;
+}
+
+.elementContainer {
+    padding-bottom: 2vh;
+}
+
+.image {
+    justify-content: start;
+
+    padding-left: 5vw;
+
+}
+
+.contactImg {
+
+    min-width: 250px;
+    width: 50%;
+    height: 100%;
+
+    border: solid 1px;    
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    
+    .contactContainer {
+
+        display: block;
+    
+        width: 100vw;
+        min-height: 70vh;
+    
+    
+    }
+    
+    .contactBox {
+        display: flex;
+        
+        width: 100vw;
+    
+    
+    }
+    
+    .text {
+        justify-content: center;
+    
+    
+    }
+
+    .image {
+        justify-content: center;
+
+        padding-top: 5vh;
+
+        padding-left: 0;
+    
+    }
+    
+    .contactImg {
+    
+        min-width: 250px;
+        width: 70%;
+        height: 30vh;
+    
+        border: solid 1px;    
+    }
+    
+}

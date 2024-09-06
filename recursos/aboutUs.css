@@ -1,0 +1,140 @@
+
+
+.aboutContainer {
+    display: flex;
+
+    width: 100vw;
+    min-height: 70vh;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    background-color: var(--green-main);
+
+    color: var(--logo);
+}
+
+.elementContainer {
+
+    width: 50%;
+
+}
+
+.textContainer {
+
+    /*centrar padding-top: 10%; */
+    padding-bottom: 10%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-family: sans-serif;
+
+    text-align: justify;
+}
+
+.tittleContainer {
+    font-weight: 900;
+
+    font-family: var(--JosefinSans);
+
+    font-size: 4vh;
+}
+
+.textElement {
+    padding-top: 3%;
+
+    font-size: 2.5vh;
+}  
+
+.imageContainer {
+
+    /* background-image: url(../img/desarrollos/yacatas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    border: solid 1px;
+}
+
+.aboutContainerResponsive {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .aboutContainerResponsive {
+        display: block;
+    }
+
+    .aboutContainer {
+        display: none;
+    }
+
+    
+.aboutContainerResponsive {
+    display: block;
+
+    min-height: 100vh;
+
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    background-color: var(--green-main);
+    color: var(--logo);
+}
+
+.elementContainerResponsive {
+
+    width: 100%;
+
+
+}
+
+.textContainerResponsive {
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: center;
+}
+
+.tittleContainerResponsive {
+    font-weight: 900;
+
+    font-family: var(--JosefinSans);
+
+    font-size: 4vh;
+}
+
+.textElementResponsive {
+    padding-top: 3%;
+
+    font-size: 2.5vh;
+
+    font-family: sans-serif;
+    text-align: justify;
+}  
+
+.imageContainerResponsive {
+
+    height: 50vh;
+
+    /* background-image: url(../img/desarrollos/yacatas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+    border: solid 1px;
+
+}
+
+
+}
